@@ -1,0 +1,241 @@
+/* ================
+    1 - GLOBAL VARIABLES
+    2 - NAVBAR VARIABLES
+    3 - SELF INTRODUCTION VARIABLES
+    4 - SOFT SKILLS VARIABLES
+    6 - FOOTER VARIABLES
+    7 - RESPONSIVE
+   ================*/
+
+
+/* GLOBAL VARIABLES*/
+:root {
+  --main-color: #71f5f9;
+  --secondary-color: #CA9EFF;
+  --tertiary-color: #FC8EF4;
+  --simple-color: #fff;
+  --second-simple-color: #FAFAFA;
+  --footer-primary-color: #8a2be2;
+  --button-hover: #21c4ab;
+}
+
+a, p, span, h1, h5{
+    font-family: 'Philosopher', sans-serif !important;
+}
+
+hr{
+    border-top-color: var(--main-color) !important;
+    width: 10%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* NAVBAR VARIABLES*/
+i.fa.fa-bars{
+    color: var(--simple-color);
+    font-size: 28px;
+}
+
+.navbar, .contact{
+    background: var(--main-color);
+    background: linear-gradient(90deg, var(--main-color) 0%, var(--secondary-color) 58%, var(--tertiary-color) 100%);
+    justify-content: space-between;
+}
+
+.nav-link{
+    color: var(--second-simple-color);
+}
+
+.nav-link:hover{
+    color: var(--simple-color);
+    font-weight: bold;
+}
+
+.imgNavbar{
+    margin-left: 20px;
+    height: 30px;
+}
+
+.imgNavbar:hover{
+    cursor: pointer;
+}
+
+/* SELF INTRODUCTION VARIABLES*/
+.imgPortfolio{
+    height: 400px;
+}
+
+.introductionTitle{
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--main-color);
+}
+
+
+/* SOFT SKILLS VARIABLES */
+.title, .title_exp, .card-title{
+    color: var(--main-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-img-top{
+    height: 300px;
+}
+.card{
+    width: 18rem;
+    height: 450px;
+}
+
+.card-text{
+    text-align: center;
+}
+
+/* HARD-SKILLS VARIABLES */
+.imgHardSkills{
+    height: 100px;
+    margin-top:20px;
+}
+
+.imgHardSkills:hover{
+    cursor: pointer;
+}
+
+.skills-box{
+    flex: 1 1 33%;
+    max-width: 25%;
+}
+
+/* EXPERIENCES VARIABLES */
+.imgExperience{
+    width: 400px;
+}
+
+.carousel-page-item{
+    height: 290px;
+}
+
+.paragrafoExp{
+    width: 60%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.imgEcommerce{
+    margin-top: 55px;
+}
+
+.imgAudiovisual{
+    margin-top: 25px;
+}
+
+i.fa.fa-angle-left{
+    margin-right: 60px;
+}
+
+i.fa.fa-angle-right{
+    margin-left: 60px;
+}
+
+i.fa.fa-angle-left, i.fa.fa-angle-right{
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+i.fa.fa-angle-left:hover, i.fa.fa-angle-right:hover{
+    color: var(--button-hover);
+}
+
+.mobile{
+    display: none;
+}
+
+/* FOOTER VARIABLES*/
+i.fa.fa-linkedin-square{
+    border-left: 1px solid var(--footer-primary-color);
+    padding-left: 10px;
+    margin-left: 10px;
+    color: var(--footer-primary-color);
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.nome_autor{
+    text-decoration: none;
+    color: var(--footer-primary-color);
+    cursor: default;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px){
+
+    .container{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .imgNavbar{
+        margin: 10px;
+    }
+    
+    .imgPortfolio{
+        height: 300px;
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+
+    .introductionTitle{
+      font-size: 2rem;  
+    }
+
+    .card{
+        margin-top: 40px;
+    }
+
+    .skills-box{
+        flex: 1 1 50%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .imgHardSkills {
+        height: 90px;
+    }
+
+    i.fa.fa-linkedin-square{
+        display: none;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .title_exp{
+        font-size: 2rem;
+    }
+
+    .paragrafoExp{
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .carousel-page-item{
+        height: 150px;
+    }
+}
+
+
+
